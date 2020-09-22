@@ -90,7 +90,9 @@ def pdf(x):
 	return max(0, 8*x)
 cdf_xs, cdf_ys = gen_cdf_vals(pdf, -0.5, 0.5)
 
-for q in range(20000):
+
+
+for q in range(50000):
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			pygame.quit()
